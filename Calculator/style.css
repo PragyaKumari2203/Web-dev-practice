@@ -1,0 +1,141 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  color: #d6d6ff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right top, #06085b, #20197e, #462a95, #7436c5, #a93ff4);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.container {
+  background: rgb(39, 38, 38);
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px rgba(0,0,0,0.7);
+}
+
+/* Input Section */
+.input {
+  width: 100%;
+}
+
+.inputText {
+  width: 90%;
+  height: 80px;
+  font-size: 2rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: right;
+  background-color: #232323;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 20px rgb(166, 160, 160);
+}
+
+/* Buttons Layout */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  flex: 1 1 20%;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  box-shadow: -2px -2px 10px black;
+  background-color: #59585a;
+  color: #e8e0ff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover, .inputText:hover {
+  font-size: 1.3rem;
+  box-shadow: 0 0 5px #42615adf;
+}
+
+/* Operators */
+.operator {
+  color: yellow;
+  background-color: #3f3347df;
+}
+
+.operator:hover {
+  box-shadow: 0 0 5px #3f3347df;
+}
+
+/* Media Queries */
+
+/* For tablets */
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .inputText {
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    height: 45px;
+    font-size: 1.1rem;
+  }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0.8rem;
+  }
+
+  .inputText {
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  .btn {
+    height: 42px;
+    font-size: 1rem;
+    margin: 2% 1%;
+    border-radius: 40%;
+  }
+
+  .row {
+    gap: 0.5rem;
+  }
+}

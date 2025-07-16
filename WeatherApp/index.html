@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="search flex">
+      <input type="text" placeholder="Enter place name" spellcheck="false">
+      <button class="search-btn"><img src="images/search.png" alt=""></button>
+    </div>
+    <div class="error">
+      City not found
+    </div>
+
+    <div class="weather-info">
+      <img class="weather-img" src="images/clear.png">
+      <h1 class="temp"></h1>
+      <h2 class="city"></h2>
+      <div class="weather-info-lower flex">
+        <div class="humidity">
+          <h3>Humidity</h3>
+          <div class="humidity-info flex">
+            <img src="images/humidity.png" alt="">
+            <h3 class="humidity-value"></h3>
+          </div>
+        </div>
+        <div class="wind">
+          <h3>Wind-Speed</h3>
+          <div class="wind-info flex">
+            <img src="images/wind.png" alt="">
+            <h3 class="Wind-Speed-value"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
